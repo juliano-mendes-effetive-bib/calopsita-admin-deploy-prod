@@ -1,0 +1,357 @@
+<?xml version="1.0"?>
+<locate>
+	<general>
+		<DATE_FORMAT>MM-DD-YYYY</DATE_FORMAT>
+		<DAY_NAMES>Domingo,Lunes,Martes,Miercoles,Jueves,Viernes,Sabado</DAY_NAMES>
+		<DAY_NAMES_SHORT>Dom,Lun,Mar,Mie,Jue,Vie,Sab</DAY_NAMES_SHORT>
+		<DAY_NAMES_MINI>D,L,M,M,J,V,S</DAY_NAMES_MINI>
+		<MONTH_NAMES>Enero,Febrero,Marzo,Abril,Mayo,Junio,Julio,Agosto,Septiembre,Octubre,Noviembre,Diciembre</MONTH_NAMES>
+		<MONTH_NAMES_SHORT>Ene,Feb,Mar,Abr,May,Jun,Jul,Ago,Sep,Oct,Nov,Dic</MONTH_NAMES_SHORT>
+		<MONTH_NAMES_MINI>E,F,M,A,M,J,J,A,S,O,N,D</MONTH_NAMES_MINI>
+	</general>
+    <menus>
+    	<MN_DASHBOARDGROUP>Dashboard</MN_DASHBOARDGROUP>
+    	<MN_INDICATORGROUP>Indicadores</MN_INDICATORGROUP>
+    	<MN_DATACENTERGROUP>Datacenter</MN_DATACENTERGROUP>
+    	<MN_STATIONGROUP>Estaciones</MN_STATIONGROUP>
+    	<MN_MONITORINGGROUP>Monitoreo</MN_MONITORINGGROUP>
+    	<MN_TRANSACTIONGROUP>Transaccion</MN_TRANSACTIONGROUP>
+    	<MN_EVENTS>Eventos</MN_EVENTS>
+    	<MN_ALERTS>Alertas</MN_ALERTS>
+    	<MN_RESPONSES>Respuestas</MN_RESPONSES>
+    	<MN_TOOLS>Herramientas</MN_TOOLS>
+    	<MN_HL7WORKFLOW>Flujo HL7</MN_HL7WORKFLOW>
+    	<MN_HL7NAVIGATOR>Navegador HL7</MN_HL7NAVIGATOR>
+    	<MN_HL7EDITOR>Editor HL7</MN_HL7EDITOR>
+    	<MN_SETUPGROUP>Configuración</MN_SETUPGROUP>
+    	<MN_MONITORING>Monitoreo</MN_MONITORING>
+    	<MN_SERVERS>Servidores</MN_SERVERS>
+    	<MN_EVENTCONTROL>Control de eventos</MN_EVENTCONTROL>
+    	<MN_TASKCONTROL>Control de tareas</MN_TASKCONTROL>
+    	<MN_SERVERGROUP>Grupo de servidor</MN_SERVERGROUP>
+    	<MN_AGENTS>Agentes</MN_AGENTS>
+    	<MN_ALERTING>Alerta</MN_ALERTING>
+    	<MN_ALERTPROFILE>Perfiles</MN_ALERTPROFILE>
+    	<MN_ALERTRULE>Reglas</MN_ALERTRULE>
+    	<MN_ALERTSCRIPT>Scripts</MN_ALERTSCRIPT>
+    	<MN_CONNECTOR>Conexión</MN_CONNECTOR>
+    	<MN_DATASOURCE>Origen Datos</MN_DATASOURCE>
+    	<MN_INDGROUP>Indicador de Grupo</MN_INDGROUP>
+    	<MN_INDICATOR>Indicador</MN_INDICATOR>
+    	<MN_SYSTEMGROUP>Sistema</MN_SYSTEMGROUP>
+    	<MN_USERS>Usuarios</MN_USERS>
+    	<MN_ROLES>Roles</MN_ROLES>
+    	<MN_PRIVILEGES>Privilegios</MN_PRIVILEGES>
+    	<MN_FUNCTIONALITIES>Funcionalidades</MN_FUNCTIONALITIES>
+    	<MN_PARAMETERS>Parametros</MN_PARAMETERS>
+    	<MN_PLUGINS>Conectores</MN_PLUGINS>
+    	<MN_EXAM_CONCLUSION_TYPE>Tipo de Conclusão</MN_EXAM_CONCLUSION_TYPE>
+        <MN_MOUNTING_POSITION>Posição de Montagem</MN_MOUNTING_POSITION>
+        <MN_USAGE_SEGMENT>Segmento de Uso</MN_USAGE_SEGMENT>
+        <MN_VISIT_TYPE>Tipo de Visita</MN_VISIT_TYPE>
+    	<MN_EXAM_PRODUCT>Examenes de Productos</MN_EXAM_PRODUCT>
+    </menus>
+    <buttons>
+    	<BT_OK>OK</BT_OK>
+    	<BT_CANCEL>Cancelar</BT_CANCEL>
+    	<BT_YES>Si</BT_YES>
+    	<BT_NO>No</BT_NO>
+    	<BT_SEARCH>Búsqueda</BT_SEARCH>
+    	<BT_SELECT>Seleccionar</BT_SELECT>
+    	<BT_NEW>Nuevo</BT_NEW>
+    	<BT_DELETE>Eliminar</BT_DELETE>
+    	<BT_REFRESH>Refrescar</BT_REFRESH>
+    	<BT_LOGIN>Login</BT_LOGIN>
+    	<BT_SAVE>Guardar</BT_SAVE>
+    	<BT_ADD>Agregar</BT_ADD>
+    	<BT_EXECUTE>Ejecutar</BT_EXECUTE>
+    	<BT_CONFIRM>Confirmar</BT_CONFIRM>
+    </buttons>
+    <labels>
+    	<VW_USER>Usuario</VW_USER>
+    	<VW_USERLIST>Usuarios</VW_USERLIST>
+    	<VW_USEREDIT>Nuevo Usuario</VW_USEREDIT>
+    	<VW_SERVERGROUP>Grupo de Servidor</VW_SERVERGROUP>
+    	<VW_SERVERGROUPLIST>Grupos de Servidores</VW_SERVERGROUPLIST>
+    	<VW_SERVERGROUPEDIT>Nuevo Groupo de Servidor</VW_SERVERGROUPEDIT>
+    	<VW_SERVER>Servidor</VW_SERVER>
+    	<VW_SERVERLIST>Servidores</VW_SERVERLIST>
+    	<VW_SERVEREDIT>Nuevo Servidor</VW_SERVEREDIT>
+    	<VW_PROCESS>Proceso</VW_PROCESS>
+    	<VW_PROCESSLIST>Procesos</VW_PROCESSLIST>
+    	<VW_PROCESSEDIT>Nuevo Proceso</VW_PROCESSEDIT>
+    	<VW_AGENT>Agente</VW_AGENT>
+    	<VW_AGENTLIST>Agentes</VW_AGENTLIST>
+    	<VW_AGENTEDIT>Nuevo Agente</VW_AGENTEDIT>
+    	<VW_PRIVILEGE>Privilegio</VW_PRIVILEGE>
+    	<VW_PRIVILEGELIST>Privilegios</VW_PRIVILEGELIST>
+    	<VW_PRIVILEGEEDIT>Nuevo Privilegio</VW_PRIVILEGEEDIT>
+    	<VW_FUNCTIONALITY>Funcionalidad</VW_FUNCTIONALITY>
+    	<VW_FUNCTIONALITYLIST>Funcionalidades</VW_FUNCTIONALITYLIST>
+    	<VW_FUNCTIONALITYEDIT>Nueva Funcionalidad</VW_FUNCTIONALITYEDIT>
+    	<VW_ROLE>Rol</VW_ROLE>
+    	<VW_ROLEEDIT>Nuevo Rol</VW_ROLEEDIT>
+    	<VW_ROLELIST>Roles</VW_ROLELIST>
+    	<VW_PLUGIN>Conector</VW_PLUGIN>
+    	<VW_PLUGINEDIT>Nuevo Conector</VW_PLUGINEDIT>
+    	<VW_PLUGINLIST>Conectores</VW_PLUGINLIST>
+    	<VW_PLUGINMETHOD>Métodos</VW_PLUGINMETHOD>
+    	<VW_PLUGINMETHODEDIT>Nuevo Método</VW_PLUGINMETHODEDIT>
+    	<VW_PLUGINMETHODLIST>Métodos</VW_PLUGINMETHODLIST>
+    	<VW_FOLDER>Carpeta</VW_FOLDER>
+    	<VW_FOLDEREDIT>Nueva Carpeta</VW_FOLDEREDIT>
+    	<VW_FOLDERLIST>Carpetas</VW_FOLDERLIST>
+    	<VW_VARIABLE>Variable</VW_VARIABLE>
+    	<VW_VARIABLEEDIT>Nuevo Variable</VW_VARIABLEEDIT>
+    	<VW_VARIABLELIST>Variables</VW_VARIABLELIST>
+    	<VW_INDICATORGROUP>Grupo Indicador</VW_INDICATORGROUP>
+    	<VW_INDICATORGROUPEDIT>Nuevo Grupo Indicador</VW_INDICATORGROUPEDIT>
+    	<VW_INDICATORGROUPLIST>Grupos Indicadores</VW_INDICATORGROUPLIST>
+    	<VW_INDICATOR>Indicador</VW_INDICATOR>
+    	<VW_INDICATOREDIT>Nuevo Indicador</VW_INDICATOREDIT>
+    	<VW_INDICATORLIST>Indicadores</VW_INDICATORLIST>    	
+    	<VW_ALERTRULE>Regla</VW_ALERTRULE>
+    	<VW_ALERTRULEEDIT>Nueva Regla</VW_ALERTRULEEDIT>
+    	<VW_ALERTRULELIST>Reglas</VW_ALERTRULELIST>    	
+    	<VW_ALERTPROFILE>Perfil</VW_ALERTPROFILE>
+    	<VW_ALERTPROFILEEDIT>Nuevo Perfil</VW_ALERTPROFILEEDIT>
+    	<VW_ALERTPROFILELIST>Perfiles</VW_ALERTPROFILELIST>    	
+    	<VW_ALERTSCRIPT>Script</VW_ALERTSCRIPT>
+    	<VW_ALERTSCRIPTEDIT>Nuevo Script</VW_ALERTSCRIPTEDIT>
+    	<VW_ALERTSCRIPTLIST>Scripts</VW_ALERTSCRIPTLIST>    	
+    	<VW_DATASOURCE>Origen de Datos</VW_DATASOURCE>
+    	<VW_DATASOURCEEDIT>Nuevo Origen de Datos</VW_DATASOURCEEDIT>
+    	<VW_DATASOURCELIST>Origen de Datos</VW_DATASOURCELIST>    	
+    	<VW_CONNECTOR>Conexión</VW_CONNECTOR>
+    	<VW_CONNECTOREDIT>Nueva Conexión</VW_CONNECTOREDIT>
+    	<VW_CONNECTORLIST>Conexiones</VW_CONNECTORLIST>    	
+    	<VW_USERROLEEDIT>Agregar Rol</VW_USERROLEEDIT>
+    	<LB_USERNAME>Nombre de usuario</LB_USERNAME>
+    	<LB_PASSWORD>Password</LB_PASSWORD>
+   		<LB_NEWPASSWORD>Nueva Password</LB_NEWPASSWORD>
+    	<LB_CONFIRM>Confirmar</LB_CONFIRM>
+    	<LB_PROFILE>Perfil</LB_PROFILE>
+    	<LB_User1>Administrador</LB_User1>
+    	<LB_User2>Cambiar Password</LB_User2>
+    	<LB_NAME>Nombre</LB_NAME>
+    	<LB_LOGIN>Login</LB_LOGIN>
+    	<LB_GENERALINFO>Información General</LB_GENERALINFO>
+    	<LB_INACTIVEDATE>Fecha Inactivación</LB_INACTIVEDATE>
+    	<LB_LANGUAGE>Lenguaje</LB_LANGUAGE>
+    	<LB_EMAIL>E-mail</LB_EMAIL>
+    	<LB_ID>ID</LB_ID>
+    	<LB_Role>Rol</LB_Role>
+    	<LB_ACTIVE>Activo</LB_ACTIVE>
+     	<LB_PERMISSION>Permiso</LB_PERMISSION>
+     	<LB_HOSTNAME>Hostname</LB_HOSTNAME>
+     	<LB_TYPE>Typo</LB_TYPE>
+     	<LB_LOCATION>Ubicación</LB_LOCATION>
+     	<LB_VERSION>Versión</LB_VERSION>
+     	<LB_AUTHOR>Autor</LB_AUTHOR>
+    	<VW_PARAMETER>Parametro</VW_PARAMETER>
+    	<VW_PARAMETEREDIT>Nuevo Parametro</VW_PARAMETEREDIT>
+    	<VW_PARAMETERLIST>Parametros</VW_PARAMETERLIST>
+     	<LB_TOPIC>Tema</LB_TOPIC>
+     	<LB_ITEM>Item</LB_ITEM>
+     	<LB_VALUE>Valor</LB_VALUE>
+     	<LB_COMMENT>Comentario</LB_COMMENT>
+     	<LB_TITLE>Título</LB_TITLE>
+     	<LB_CLASS>Clase</LB_CLASS>
+     	<LB_DESCRIPTION>Descripción</LB_DESCRIPTION>
+     	<LB_PATH>Ruta</LB_PATH>
+     	<LB_VIEW>Ver</LB_VIEW>
+     	<LB_CREATE>Crear</LB_CREATE>
+     	<LB_MODIFY>Modificar</LB_MODIFY>
+     	<LB_DELETE>Eliminar</LB_DELETE>
+     	<LB_LINK>Enlace</LB_LINK>
+     	<LB_DISPLAYNAME>Nombre a Desplegar</LB_DISPLAYNAME>
+     	<LB_ACTION>Acción</LB_ACTION>
+     	<LB_FREE>Libre</LB_FREE>
+     	<LB_USED>Usado</LB_USED>
+     	<LB_TOTAL>Total</LB_TOTAL>
+     	<LB_SYSTEM>Sistema</LB_SYSTEM>
+     	<LB_CONFIRMATION>Confirmación</LB_CONFIRMATION>
+     	<LB_MODEL>Modelo</LB_MODEL>
+     	<LB_IPADDRESS>Dirección IP</LB_IPADDRESS>
+     	<LB_INTERFACEINFO>Información de Interfase</LB_INTERFACEINFO>
+     	<LB_FILENAME>Nombre Archivo</LB_FILENAME>
+     	<LB_FULLPATH>Ruta completa</LB_FULLPATH>
+     	<LB_ARGUMENT>Argumento</LB_ARGUMENT>
+     	<LB_THEME>Tema</LB_THEME>
+     	<LB_INTERFACETYPE>Tipo Interfase</LB_INTERFACETYPE>
+     	<LB_HL7TYPE>Tipo HL7</LB_HL7TYPE>
+     	<LB_HL7MONITORING>HL7 Monitoring</LB_HL7MONITORING>
+     	<LB_NOTES>Notas</LB_NOTES>
+     	<LB_CANVIEW>Puede Visualizar?</LB_CANVIEW>
+     	<LB_CANCREATE>Puede Crear?</LB_CANCREATE>
+     	<LB_CANMODIFY>Puede Modificar?</LB_CANMODIFY>
+     	<LB_CANDELETE>Puede Eliminar?</LB_CANDELETE>
+     	<LB_CANLINK>Puede Enlazar?</LB_CANLINK>
+     	<LB_LENGHT>Largo</LB_LENGHT>
+     	<LB_LISTVALUE>Valor Lista (; sep)</LB_LISTVALUE>
+     	<LB_FIELDTYPE>Tipo Campo</LB_FIELDTYPE>
+     	<LB_LOV>Lista de valores</LB_LOV>
+     	<LB_REMOVE>Remover</LB_REMOVE>
+     	<LB_BROWSE>Explorar</LB_BROWSE>
+     	<LB_SEARCH>Buscar</LB_SEARCH>
+     	<LB_SELECTITEM>Seleccionar item</LB_SELECTITEM>
+     	<LB_DEFAULT>Default</LB_DEFAULT>
+     	<LB_IMPORTDATE>Importar fecha</LB_IMPORTDATE>
+     	<LB_REFRESH>Refrescar</LB_REFRESH>
+     	<LB_REFRESHTIME>(en minutos, 1-1000)</LB_REFRESHTIME>
+     	<LB_VALIDATEDATASOURCE>Validar Origen Datos</LB_VALIDATEDATASOURCE>
+     	<LB_VALUEFIELD>Valor Campo</LB_VALUEFIELD>
+     	<LB_VALIDATED>VALIDADO</LB_VALIDATED>
+     	<LB_UNVALIDATED>INVALIDADO</LB_UNVALIDATED>
+     	<LB_RESULT>Resultado</LB_RESULT>
+     	<LB_CHARTINFORMATION>Gráfico - Información</LB_CHARTINFORMATION>
+     	<LB_CHARTPREVIEW>Gráfico - Previsualización</LB_CHARTPREVIEW>
+     	<LB_CATEGORYFIELD>Campo de categoría</LB_CATEGORYFIELD>
+     	<LB_DATATIPFIELD>Campo Datatip</LB_DATATIPFIELD>
+     	<LB_AXISINFORMATION>Eje - Información</LB_AXISINFORMATION>
+     	<LB_LABELAXISX>Etiqueta Eje X</LB_LABELAXISX>
+     	<LB_LABELAXISY>Etiqueta Eje Y</LB_LABELAXISY>
+     	<LB_MAXVALUEAXISY>Max. Valor Eje Y</LB_MAXVALUEAXISY>
+     	<LB_MINVALUEAXISY>Min. Valor Eje Y</LB_MINVALUEAXISY>
+     	<LB_INTERVALAXISY>Eje Intervalo Y</LB_INTERVALAXISY>
+     	<LB_OTHERINFORMATION>Otra Información</LB_OTHERINFORMATION>
+     	<LB_SHOWDATATIP>Mostrar Datatip?</LB_SHOWDATATIP>
+     	<LB_SHOWPERCENT>Mostrar Percent?</LB_SHOWPERCENT>
+     	<LB_SHOWLEGEND>Mostrar Legend?</LB_SHOWLEGEND>
+     	<LB_SHOWTITLE>Mostrar Title?</LB_SHOWTITLE>
+     	<LB_GAUGEINFORMATION>Gauge - Información</LB_GAUGEINFORMATION>
+     	<LB_MAXVALUE>Max. Valor</LB_MAXVALUE>
+     	<LB_MINVALUE>Min. Valor</LB_MINVALUE>
+     	<LB_GAUGESTYLEINFORMATION>Gauge Style - Información</LB_GAUGESTYLEINFORMATION>
+     	<LB_BACKCOLOR>Color de fondo</LB_BACKCOLOR>
+     	<LB_BORDERCOLOR>Color de Margen</LB_BORDERCOLOR>
+     	<LB_CENTERCOLOR>Color central</LB_CENTERCOLOR>
+     	<LB_INDICATORCOLOR>Indicador</LB_INDICATORCOLOR>
+     	<LB_GAUGEPREVIEW>Medidor - Previsualización</LB_GAUGEPREVIEW>
+     	<LB_ALERTINFORMATION>Alerta - Información</LB_ALERTINFORMATION>
+     	<LB_ALERTVALUES>Valores de Alerta</LB_ALERTVALUES>
+     	<LB_MINCOLOR>Min. Color</LB_MINCOLOR>
+     	<LB_MAXCOLOR>Max. Color</LB_MAXCOLOR>
+     	<LB_MEDCOLOR>Med. Color</LB_MEDCOLOR>
+     	<LB_DATAGRIDINFORMATION>Datagrid - Información</LB_DATAGRIDINFORMATION>
+     	<LB_DATAGRIDPREVIEW>Datagrid - Previsualización</LB_DATAGRIDPREVIEW>
+     	<LB_COLUMNWIDTHVALUES>Valores de Ancho de Columna</LB_COLUMNWIDTHVALUES>
+     	<LB_REFRESHDATAGRIDSTRUCTURE>Refrescar estructura datagrid </LB_REFRESHDATAGRIDSTRUCTURE>
+     	<LB_GETSTRUCTUREFROMDATAGRID>Obtener estructura desde datagrid</LB_GETSTRUCTUREFROMDATAGRID>
+     	<LB_SHOWMESSAGE>Mostrar Mensaje:</LB_SHOWMESSAGE>
+     	<LB_SHOWIMAGE>Mostrar Imagen:</LB_SHOWIMAGE>
+     	<LB_CONDITIONALPREVIEW>Condicional - Previsualización</LB_CONDITIONALPREVIEW>
+     	<LB_SCORECARDTYPE>Scorecard Tipo</LB_SCORECARDTYPE>
+     	<LB_SCORECARDGREEN>Scorecard Umbral ( IF ) Verde:</LB_SCORECARDGREEN>
+     	<LB_SCORECARDYELLOW>Scorecard Umbral (ELSE IF) Amarillo:</LB_SCORECARDYELLOW>
+     	<LB_SCORECARDRED>Scorecard Umbral (ELSE) Rojo:</LB_SCORECARDRED>
+     	<LB_SCORECARDPREVIEW>Scorecard - Previsualización</LB_SCORECARDPREVIEW>
+     	<LB_INDICATORLINKINFORMATION>Indicador Enlace - Información</LB_INDICATORLINKINFORMATION>
+     	<LB_COLUMNFIELD>Campo Columna</LB_COLUMNFIELD>
+     	<LB_SOURCEINDICATOR>Indicador Origen</LB_SOURCEINDICATOR>
+     	<LB_SOURCEFILE>Archivo Origen</LB_SOURCEFILE>
+     	<LB_SOURCECODE>Código Fuente</LB_SOURCECODE>
+     	<LB_FUNCTIONNAME>Nombre Función</LB_FUNCTIONNAME>
+     	<LB_EMAILLIST>Lista Email</LB_EMAILLIST>
+     	<LB_PHONESMS>Teléfono SMS</LB_PHONESMS>
+     	<LB_SMSSERVICE>Servicio SMS</LB_SMSSERVICE>
+     	<LB_SCRIPT>Script</LB_SCRIPT>
+     	<LB_MESSAGETEMPLATE>Template Mensaje</LB_MESSAGETEMPLATE>
+     	<LB_SUBJECT>Subject</LB_SUBJECT>
+     	<LB_MESSAGE>Mensaje</LB_MESSAGE>
+     	<LB_METHOD>Método</LB_METHOD>
+      	<LB_HIDDENCOLUMNS>Columnas Ocultas</LB_HIDDENCOLUMNS>
+      	
+      	<LB_CONCLUSION>Conclusão</LB_CONCLUSION>
+		<VW_EXAM_CONCLUSION_TYPE_EDIT>Nova Conclusão</VW_EXAM_CONCLUSION_TYPE_EDIT>
+		<VW_EXAM_CONCLUSION_TYPE>Conclusões</VW_EXAM_CONCLUSION_TYPE>
+		<LB_COMPLETION_OF_CANCELLATION>Conclusão de Cancelamento</LB_COMPLETION_OF_CANCELLATION>
+
+		
+		
+		<VW_MOUNTING_POSITION_LIST>Posição de Montagem</VW_MOUNTING_POSITION_LIST>
+		<VW_MOUNTING_POSITION_EDIT>Nova Posição de montagem</VW_MOUNTING_POSITION_EDIT>
+		<VW_USAGE_SEGMENT_LIST>Segmentos de Uso</VW_USAGE_SEGMENT_LIST>
+		<VW_USAGE_SEGMENT_EDIT>Novo Segmento de Uso</VW_USAGE_SEGMENT_EDIT>
+		<VW_VISIT_TYPE_LIST>Tipo de Visita</VW_VISIT_TYPE_LIST>
+		<VW_VISIT_TYPE_EDIT>Novo Tipo de Visita</VW_VISIT_TYPE_EDIT>
+				
+
+		
+		<LB_VISIT>Visita</LB_VISIT>
+		<VW_VISITS>Visitas</VW_VISITS>
+		<LB_ID_VISIT>Id Visita</LB_ID_VISIT>
+		<VW_NEW_VISIT>Nova Visita</VW_NEW_VISIT>
+>>>>>>> .r3510
+    </labels>
+    <datagrids>
+    	<DG_LISTCOUNT> registro(s) recuperados...</DG_LISTCOUNT>
+    </datagrids>
+    <validation>
+     	<EMAIL_INVALID_CHAR_ERROR>La dirección de email contiene caractéres inválidos.</EMAIL_INVALID_CHAR_ERROR>
+     	<EMAIL_INVALID_DOMAIN_ERROR>El dominio en la dirección de email presenta un formato incorrecto.</EMAIL_INVALID_DOMAIN_ERROR>
+     	<EMAIL_INVALID_IP_DOMAIN_ERROR>El dominio IP en la dirección de email presenta un formato incorrecto.</EMAIL_INVALID_IP_DOMAIN_ERROR>
+     	<EMAIL_INVALID_PERIODS_IN_DOMAIN_ERROR>El dominio en la dirección de email tiene puntos suspensivos.</EMAIL_INVALID_PERIODS_IN_DOMAIN_ERROR>
+     	<EMAIL_MISSING_AT_SIGN_ERROR>Falta el signo arroba(@) en la dirección de correo.</EMAIL_MISSING_AT_SIGN_ERROR>
+     	<EMAIL_MISSING_PERIOD_IN_DOMAIN_ERROR>Falta el punto (.) en el dominio de la dirección del correo electrónico.</EMAIL_MISSING_PERIOD_IN_DOMAIN_ERROR>
+     	<EMAIL_MISSING_USERNAME_ERROR>Falta el nombre de usuario in la dirección de correo.</EMAIL_MISSING_USERNAME_ERROR>
+     	<EMAIL_TOO_MANY_AT_SIGNS_ERROR>La dirección de mail contiene muchos caracteres (@).</EMAIL_TOO_MANY_AT_SIGNS_ERROR>
+     	<EMAIL_REQUIRED_FIELD_ERROR>Este campo es requerido.</EMAIL_REQUIRED_FIELD_ERROR>
+     	<PHONE_INVALID_CHAR_ERROR>El número de teléfono contiene caracteres inválidos.</PHONE_INVALID_CHAR_ERROR>
+     	<PHONE_WRONG_LENGTH_ERROR>El número de teléfono debe contener al menos 10 digitos.</PHONE_WRONG_LENGTH_ERROR>
+     	<PHONE_REQUIRED_FIELD_ERROR>Este campo es requerido.</PHONE_REQUIRED_FIELD_ERROR>
+     	<DATE_WRONG_DAY_ERROR>Ingrese un día válido para el mes.</DATE_WRONG_DAY_ERROR>
+     	<DATE_WRONG_LENGTH_ERROR>Tipee la fecha con el siguiente formato : </DATE_WRONG_LENGTH_ERROR>
+     	<DATE_WRONG_MONTH_ERROR>Ingrese el mes entre 1 y 12.</DATE_WRONG_MONTH_ERROR>
+     	<DATE_WRONG_YEAR_ERROR>Ingrese el año entre 0 y 9999.</DATE_WRONG_YEAR_ERROR>
+     	<DATE_INVALID_CHAR_ERROR>La fecha contiene caracteres inválidos.</DATE_INVALID_CHAR_ERROR>
+     	<DATE_FORMAT_ERROR>Error de configuración: formato incorrecto del string.</DATE_FORMAT_ERROR>
+     	<DATE_REQUIRED_FIELD_ERROR>Este campo es requerido.</DATE_REQUIRED_FIELD_ERROR>
+     	<STRING_TOO_LONG_ERROR>Este string es mayor que el largo máximo permitido. Este debe ser menor que </STRING_TOO_LONG_ERROR>
+     	<STRING_TOO_LONG_ERROR_CHAR> caracteres de largo.</STRING_TOO_LONG_ERROR_CHAR>
+     	<STRING_TOO_SHORT_ERROR>El string es menor que el largo máximo permitido. Este debe ser al menos de </STRING_TOO_SHORT_ERROR>
+     	<STRING_TOO_SHORT_ERROR_CHAR> caracteres de largo.</STRING_TOO_SHORT_ERROR_CHAR>
+     	<STRING_REQUIRED_FIELD_ERROR>Este campo es requerido.</STRING_REQUIRED_FIELD_ERROR>
+     	<NUMBER_DECIMAL_POINT_COUNT_ERROR>El separador decimal sólo puede ocurrir una vez.</NUMBER_DECIMAL_POINT_COUNT_ERROR>
+     	<NUMBER_EXCEEDS_MAX_ERROR>El número ingresado es muy grande.</NUMBER_EXCEEDS_MAX_ERROR>
+     	<NUMBER_INTEGER_ERROR>El número debe ser un entero.</NUMBER_INTEGER_ERROR>
+     	<NUMBER_INVALID_CHAR_ERROR>El valor ingresado contiene números no válidos.</NUMBER_INVALID_CHAR_ERROR>
+     	<NUMBER_INVALID_FORMAT_CHARS_ERROR>Uno de los parámetros de formato es inválido.</NUMBER_INVALID_FORMAT_CHARS_ERROR>
+     	<NUMBER_LOWER_THAN_MIN_ERROR>La cantidad ingresada es muy pequeña.</NUMBER_LOWER_THAN_MIN_ERROR>
+     	<NUMBER_NEGATIVE_ERROR>La cantidad no puede ser negativa.</NUMBER_NEGATIVE_ERROR>
+     	<NUMBER_PRECISION_ERROR>La cantidad ingresada tiene muchos dígitos después del punto decimal.</NUMBER_PRECISION_ERROR>
+     	<NUMBER_SEPARATION_ERROR>Después del separador de miles deben haber tres dígitos.</NUMBER_SEPARATION_ERROR>
+     	<NUMBER_REQUIRED_FIELD_ERROR>Este campo es requerido.</NUMBER_REQUIRED_FIELD_ERROR>
+    </validation>
+ 	<messages>
+ 		<TT_INFORMATION>Información</TT_INFORMATION>
+ 		<TT_WARNING>Precaución</TT_WARNING>
+ 		<TT_ERROR>Error</TT_ERROR>
+ 		<TT_EXECUTION>Execución</TT_EXECUTION>
+ 		<TT_VALIDATION>Validación</TT_VALIDATION>
+ 		<ALERT_CONFIRMATION1>Solicitud finalizada exitosamente</ALERT_CONFIRMATION1>
+ 		<ALERT_INFORMATION1>Por favor, seleccione un registro!</ALERT_INFORMATION1>
+ 		<MSG_CONFIRMATIONTITLE>Está seguro?</MSG_CONFIRMATIONTITLE>
+ 		<MSG_CONFIRMATION>Confirmación</MSG_CONFIRMATION>
+ 		<MSG_LOADINGVARS>Cargando variables...</MSG_LOADINGVARS>
+ 		<MSG_EXECUTION1>Ejecución manual</MSG_EXECUTION1>
+ 		<MSG_EXECUTION2>Acción enviada a ejecución procesada exitosamente</MSG_EXECUTION2>
+ 		<ER_PARSER1>Error de decodificación de XML. Por favor revise el archivo de preferencias.xml !</ER_PARSER1>
+ 		<ER_PARSER2>Error de decodificación de XML. Por favor revise el archivo de indicadores .xml !</ER_PARSER2>
+ 		<VL_LoginMessage1>Password Incorrecta</VL_LoginMessage1>
+ 		<VL_LoginMessage2>Usuario no encontrado!</VL_LoginMessage2>
+ 		<VL_LoginMessage3>Password nueva y confirmación deben ser las mismas !</VL_LoginMessage3>
+ 		<VL_LoginMessage4>Password actual es incorrecta!</VL_LoginMessage4>
+ 		<VL_LoginMessage5>Todos los campos son requeridos!</VL_LoginMessage5>
+ 		<VL_LoginMessage6>Ingrese al sistema</VL_LoginMessage6>
+ 		<VL_LoginMessage7>Complete usuario y password</VL_LoginMessage7>
+ 		<VL_LoginMessage8>Seleccione perfil por favor</VL_LoginMessage8>
+ 		<VL_LoginMessage9>Ud. no tiene permiso para hacer Login!</VL_LoginMessage9>
+ 		<VL_Validation1>Debe llenar todos los campos requeridos!</VL_Validation1>
+ 		<VL_Validation2>Por favor seleccione un item válido!</VL_Validation2>
+ 		<VL_Validation3>Error de Validación: Origen de datos Inválido</VL_Validation3>
+ 		<VL_Validation4>Por favor, seleccione un origen de datos válido</VL_Validation4>
+ 		<VL_Validation5>Columna de datos no encontrada!</VL_Validation5>
+ 		<VL_Validation6>Por favor, primero refresque el Datagrid!</VL_Validation6>
+  	</messages>
+ </locate>

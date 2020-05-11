@@ -1,0 +1,1403 @@
+/*
+//------------------------------
+//  Fonts
+//------------------------------
+*/
+
+@font-face {
+    src: url("/assets/fonts/MYRIADB.TTF") ;
+    fontFamily: "main";
+    fontWeight: bold;
+    advanced-anti-aliasing: true;
+}
+
+@font-face {
+    src: url("/assets/fonts/MYRIAD.TTF") ;
+    fontFamily: "main";
+    advanced-anti-aliasing: true;
+}
+
+/*@font-face {
+    src: url("fonts/MYRIADI.TTF") ;
+    fontFamily: "main";
+    fontWeight: italic;
+    advanced-anti-aliasing: true;
+}*/
+
+/*
+//------------------------------
+//  Application
+//------------------------------
+*/
+
+
+
+Application {
+	paddingTop:0;
+	paddingBottom:0;
+	paddingLeft:0;
+	paddingRight:0;
+	vertical-gap:0;
+	theme-color: #dcdcdc;
+	font-family: arial;
+	color: #333333;
+	font-size: 12;
+	roll-over-color: #3875D7;
+}
+
+Menu{
+	item-roll-over-color: #3875D7;
+	item-selection-color: #FFFFFF;
+	text-roll-over-color: #FFFFFF;
+	theme-color: #3875D7;
+	roll-over-color: #3875D7;
+	selected-fill-colors: #3875D7;
+	background-alpha: 1;
+	selector-color: #3875D7;
+	text-selected-color: #FFFFFF;
+}
+
+.gradientBackground { borderStyle: applicationControlBar; fillColors: #8c8c8c, #3b3c3c; fillAlphas: 1, 1; highlightAlphas: 0, 0; }
+
+Alert
+{
+	title-background-skin: 		Embed("/assets/img/css/alert_title.png", scaleGridTop="9", scaleGridBottom="16", scaleGridLeft="13", scaleGridRight="85");
+	/*background-image: 		Embed("/assets/css/img/alert.png",  scaleGridTop="10", scaleGridBottom="58", scaleGridLeft="10", scaleGridRight="147");*/
+	background-size: 			"100%";
+	
+	padding-left: 				0;
+	padding-bottom: 			14;
+	padding-right: 				0;
+	padding-top: 				0;
+	
+	header-height: 				25;
+	borderStyle: 				none;
+	background-color: 			none;
+	
+	border-thickness-top:		0;
+	border-thickness-bottom:	0;
+	border-thickness-left:		0;
+	border-thickness-right:		0;
+
+	
+	color: 						#333333;
+	
+	messageStyleName: 			"alertText";
+	button-style-name: 			"buttonNoOfficial";
+	title-style-name:			"myTitle";
+}
+
+.alertText
+{
+	background-image: 			Embed("/assets/img/css/alert_back.png", scaleGridTop="1", scaleGridBottom="26", scaleGridLeft="5", scaleGridRight="85");
+	background-size: 			"100%";
+	font-family:				arial;
+	font-size:					11;
+	font-weight: 				normal;
+}
+
+.myTitle
+{
+	font-family:				arial;
+	font-size:					12;
+	font-weight: 				normal;
+	color:						#ffffff;
+	padding-left:				3;	
+}
+
+FormItemVerticalAlign
+{
+	verticalAlign: middle;
+}
+
+
+/*
+//------------------------------
+//  Custom Chrome
+//------------------------------
+*/
+
+/*CustomChrome {
+ 	backgroundAlpha: .95;
+    borderStyle: solid;
+	borderThickness: 0;
+	dropShadowEnabled: false;
+	paddingTop: 0;
+	paddingLeft: 0;
+	paddingRight: 0;
+	paddingBottom: 0;
+	verticalAlign: top;
+    horizontalAlign: left;
+    horizontalGap: 0;
+    verticalGap: 0;
+}
+
+CustomChrome {
+	backgroundSize: "100%";
+	backgroundImage: Embed(source="/assets/img/css/BackgroundChrome.png",
+        scaleGridLeft="5", scaleGridTop="5", scaleGridRight="965", scaleGridBottom="685");
+}*/
+
+.customChromeBorder {
+	backgroundSize: "100%";
+	backgroundImage: Embed(source="/assets/img/css/BackgroundBorderChrome.png",
+        scaleGridLeft="5", scaleGridTop="5", scaleGridRight="965", scaleGridBottom="685");
+}
+
+/*
+//------------------------------
+//  Container Styles
+//------------------------------
+*/
+
+.contentArea {
+	backgroundAlpha: 0.95;
+	backgroundColor: #EEEEEE;
+    borderStyle: solid;
+	borderThickness: 1;
+	borderColor: #D7D7D7;
+	borderSides: "left top right bottom";
+	cornerRadius: 0;
+	dropShadowEnabled: false;
+	paddingTop: 10;
+	paddingLeft: 10;
+	paddingRight: 10;
+	paddingBottom: 10;
+	verticalAlign: top;
+    horizontalAlign: left;
+    horizontalGap: 5;
+    verticalGap: 0;
+}
+
+BorderHighlight {
+    borderStyle: solid;
+	borderThickness: 1;
+	borderColor: #FFFFFF;
+	cornerRadius: 0;
+}
+
+/*
+//------------------------------
+//  ScrollBar
+//------------------------------
+*/
+
+.myScrollBar {
+	background-alpha: 0.5;
+	thumbIcon: Embed(source="/assets/img/css/ScrollBar_thumbIcon.png");
+	thumbDownSkin: Embed(source="/assets/img/css/ScrollThumb_downSkin.png",
+		scaleGridLeft="2", scaleGridTop="4", scaleGridRight="9", scaleGridBottom="40");
+	thumbOverSkin: Embed(source="/assets/img/css/ScrollThumb_overSkin.png",
+		scaleGridLeft="2", scaleGridTop="4", scaleGridRight="9", scaleGridBottom="40");
+	thumbUpSkin: Embed(source="/assets/img/css/ScrollThumb_upSkin.png",
+		scaleGridLeft="2", scaleGridTop="4", scaleGridRight="9", scaleGridBottom="40");
+
+}
+
+.styledColumnChart {
+	chartSeriesStyles: "column1", "column2", "column3", "column4", "column5", "column6", "column7";
+}
+.column1 {
+	fill: #205D91;
+}
+.column2 {
+	fill: #1376AF;
+}
+.column3 {
+	fill: #3590C7;
+}
+.column4 {
+	fill: #62ABDB;
+}
+.column5 {
+	fill: #8FC6E8;
+}
+.column6 {
+	fill: #AAD0E8;
+}
+.column7 {
+	fill: #CBE4F0;
+}
+
+
+/*ScrollBar {
+	up-arrow-skin: ClassReference("mx.skins.ProgrammaticSkin");
+    down-arrow-skin: ClassReference("mx.skins.ProgrammaticSkin");
+    thumbIcon: Embed(source="/assets/img/css/ScrollBar_thumbIcon.png");
+	thumbDownSkin: Embed(source="/assets/img/css/ScrollThumb_downSkin.png",
+		scaleGridLeft="2", scaleGridTop="4", scaleGridRight="9", scaleGridBottom="40");
+	thumbOverSkin: Embed(source="/assets/img/css/ScrollThumb_overSkin.png",
+		scaleGridLeft="2", scaleGridTop="4", scaleGridRight="9", scaleGridBottom="40");
+	thumbUpSkin: Embed(source="/assets/img/css/ScrollThumb_upSkin.png",
+		scaleGridLeft="2", scaleGridTop="4", scaleGridRight="9", scaleGridBottom="40");
+	trackSkin: Embed(source="/assets/img/css/ScrollTrack_Skin.png",
+		scaleGridLeft="4", scaleGridTop="4", scaleGridRight="8", scaleGridBottom="98");
+}*/
+
+/*
+//------------------------------
+//  Search Input
+//------------------------------
+*/
+
+/*SearchInputLight {
+	backgroundSize: "100%";
+	verticalAlign: middle;
+	horizontalAlign: left;
+	horizontalGap: 5;
+	backgroundImage: Embed(source="/assets/img/css/textinput_background.png",
+        scaleGridLeft="5", scaleGridTop="5", scaleGridRight="170", scaleGridBottom="19");
+}*/
+
+.searchInputText {
+	backgroundAlpha: 0;
+	focusAlpha: 0;
+	color: #444444;
+	fontSize: 10;
+	borderStyle: solid;
+	borderThickness: 0;
+	paddingTop: 0;
+}
+
+ .TextInput {
+	backgroundSize: "100%";
+	verticalAlign: middle;
+	horizontalAlign: left;
+	horizontalGap: 5;
+	padding-left: 5;
+	padding-top: 2;
+	border-style: none;
+	roll-over-color: #3875D7;
+	rollOverColor: #3875D7;
+	backgroundImage: Embed(source="/assets/img/css/TextField_Background.png",
+        scaleGridLeft="5", scaleGridTop="5", scaleGridRight="170", scaleGridBottom="19");
+}
+
+/*
+//------------------------------
+//  Text Styles
+//------------------------------
+*/
+
+.windowTitle
+{
+	color:#222222;	
+    font-family: arial; 
+    font-size: 16pt;
+}
+
+.myPanel
+{
+	closeButtonDisabledSkin: Embed(source="/assets/img/css/yflexskin.swf",symbol="Panel_closeButtonDisabledSkin");
+	closeButtonDownSkin: Embed(source="/assets/img/css/yflexskin.swf",symbol="Panel_closeButtonDownSkin");
+	closeButtonOverSkin: Embed(source="/assets/img/css/yflexskin.swf",symbol="Panel_closeButtonOverSkin");
+	closeButtonUpSkin: Embed(source="/assets/img/css/yflexskin.swf",symbol="Panel_closeButtonUpSkin");
+	titleBackgroundSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="Panel_titleBackgroundSkin");
+	borderThicknessLeft: 0;
+	borderThicknessRight: 0;
+	borderThicknessTop: 0;
+	borderThicknessBottom: 0;
+	headerHeight: 28;
+	background-color: #FFFFFF;
+	background-alpha: 1;
+	border-alpha: 1;
+	alpha:1;
+	padding-left:5;
+	padding-right:5;
+	padding-top:5;
+	padding-bottom:5;
+	drop-shadow-enabled: false;
+	titleStyleName: "panelTitle";
+}
+
+.panelTitle {
+    fontSize: 12;
+	fontWeight: bold;
+}
+
+.myCanvas {
+   background-image: Embed(source="/assets/img/css/yflexskin.swf", symbol="ButtonBar_buttonUpSkin"); 
+   background-size: "100%";	
+}
+
+
+AutoComplete
+{
+	selected-item-style-name: macMail;
+}
+
+.none 
+{
+	over-skin: ClassReference("assets.img.css.BlankSkin");
+	up-skin: ClassReference("assets.img.css.BlankSkin");
+	down-skin: ClassReference("assets.img.css.BlankSkin");
+	selected-over-skin : ClassReference("assets.img.css.BlankSkin");
+	selected-up-skin : ClassReference("assets.img.css.BlankSkin");
+	selected-down-skin : ClassReference("assets.img.css.BlankSkin");
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	font-weight: normal;
+	selected-font-weight: bold;
+	show-comma: yes;
+}
+  
+.underline
+{
+	over-skin: ClassReference("assets.img.css.BlankSkin");
+	up-skin: ClassReference("assets.img.css.BlankSkin");
+	down-skin: ClassReference("assets.img.css.BlankSkin");
+	selected-over-skin : ClassReference("assets.img.css.BlankSkin");
+	selected-up-skin : ClassReference("assets.img.css.BlankSkin");
+	selected-down-skin : ClassReference("assets.img.css.BlankSkin");
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	text-decoration: underline;
+	font-weight: normal;
+	selected-font-weight: bold;
+	show-comma: yes;
+}
+  
+.macMail 
+{
+	over-skin: ClassReference("assets.img.css.MacMailSkin");
+	up-skin: ClassReference("assets.img.css.MacMailSkin");
+	down-skin: ClassReference("assets.img.css.MacMailSkin");
+	selected-over-skin : ClassReference("assets.img.css.MacMailSkin");
+	selected-up-skin: ClassReference("assets.img.css.MacMailSkin");
+	selected-down-skin : ClassReference("assets.img.css.MacMailSkin");
+	padding-top: 0;
+	padding-bottom: 0;
+	text-selected-color: #EEEEEE;
+	padding-left: 8;
+	padding-right: 8;
+	font-weight: normal; 
+}
+
+.facebook 
+{
+	over-skin: ClassReference("assets.img.css.FacebookSkin");
+	up-skin: ClassReference("assets.img.css.FacebookSkin");
+	down-skin: ClassReference("assets.img.css.FacebookSkin");
+	selected-over-skin : ClassReference("assets.img.css.FacebookSkin");
+	selected-up-skin : ClassReference("assets.img.css.FacebookSkin");
+	selected-down-skin : ClassReference("assets.img.css.FacebookSkin");        
+	padding-top: 0;
+	padding-bottom: 0;
+	text-selected-color: #EEEEEE;
+	padding-left: 2;
+	padding-right: 5;
+	font-weight: normal;                
+}
+
+.actionsMenuButton
+{
+	over-skin: ClassReference("assets.img.css.BlankSkin");
+	up-skin: ClassReference("assets.img.css.BlankSkin");
+	down-skin: ClassReference("assets.img.css.BlankSkin");
+	selected-over-skin : ClassReference("assets.img.css.BlankSkin");
+	selected-up-skin : ClassReference("assets.img.css.BlankSkin");
+	selected-down-skin : ClassReference("assets.img.css.BlankSkin");
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-right: 4;			
+}
+
+Notification
+{
+	titleStyleName: myTitleStyle;
+	messageStyleName: myMessageStyle;
+ 	backgroundStyleName: notificationBackground;
+ 	closeButtonIcon: Embed('/assets/img/icon/iconDelete12.png');
+	paddingTop: 5;
+	paddingBottom: 5;
+	paddingLeft: 5;
+	paddingRight: 5;
+	horizontalGap: 10;
+	verticalGap: 10;
+	/*creationCompleteEffect: myWipeD;
+	removedEffect: myWipeU;*/
+}
+
+.notificationBackground
+{
+	background-image: "";
+}
+
+.myTitleStyle
+{
+	fontSize: 11;
+	fontWeight: bold;
+	color: #2c2c7b;
+}
+
+.myMessageStyle
+{
+	fontStyle: bold;
+	backgroundAlpha: 1;
+}
+
+.NotificationInfo {
+	border-skin: Embed("/assets/img/css/dialog_skin_green.png",
+			scaleGridLeft="15",
+			scaleGridRight="288",
+			scaleGridTop="60",
+			scaleGridBottom="124");
+	header-height: 0;
+	font-family: arial;
+	color: #333333;
+	font-size: 12;
+}
+
+.NotificationError {
+	border-skin: Embed("/assets/img/css/dialog_skin_red.png",
+			scaleGridLeft="15",
+			scaleGridRight="288",
+			scaleGridTop="60",
+			scaleGridBottom="124");
+	header-height: 0;
+	font-family: arial;
+	color: #333333;
+	font-size: 12;
+}
+
+.NotificationWarning {
+	border-skin: Embed("/assets/img/css/dialog_skin_info.png",
+			scaleGridLeft="15",
+			scaleGridRight="288",
+			scaleGridTop="60",
+			scaleGridBottom="124");
+	header-height: 0;
+	font-family: arial;
+	color: #333333;
+	font-size: 12;
+}
+
+SuperTabNavigator {
+	border-style:none;
+	cornerRadius: 0;
+	tabStyleName: "myButtonStyleName";
+	firstButtonStyleName: "myButtonStyleName";
+	lastButtonStyleName: "myButtonStyleName";
+	selectedTabTextStyleName: "mySelectedTabs";
+	font-family: arial;
+	tab-height: 27;
+	padding-top:0;
+	popupButtonStyleName: "tabPopupButton";
+}
+
+.mySuperTabNavigator2 {
+	border-style:none;
+	cornerRadius: 0;
+	tabStyleName: "myButtonStyleName";
+	firstButtonStyleName: "myButtonStyleName";
+	lastButtonStyleName: "myButtonStyleName";
+	selectedTabTextStyleName: "mySelectedTabs";
+	tab-height: 27;
+	padding-top:0;
+	popupButtonStyleName: "tabPopupButton";
+}
+
+.mySuperTabNavigator {
+	border-style:none;
+	cornerRadius: 0;
+	tabStyleName: "myButtonStyleName2";
+	firstButtonStyleName: "myButtonStyleName2";
+	lastButtonStyleName: "myButtonStyleName2";
+	selectedTabTextStyleName: "mySelectedTabs";
+	padding-top:0;
+	popupButtonStyleName: "tabPopupButton";
+}
+
+.tabPopupButton {
+	skin: Embed("/assets/img/css/icon_pulldown.png");
+	up-skin: Embed("/assets/img/css/icon_pulldown.png");
+	over-skin: Embed("/assets/img/css/icon_pulldown.png");
+}
+
+.tabContainer {
+	background-image:Embed("/assets/img/css/tabnav_skin.png",
+		scaleGridLeft="10",
+		scaleGridRight="430",
+		scaleGridTop="60",
+		scaleGridBottom="64");
+}
+
+.myButtonStyleName {
+	font-weight:normal;
+	text-align:left;
+	corner-radius: 0;
+	background-alpha: 0.7;
+	skin:Embed("/assets/img/css/tabControlPanel_up.png",
+		scaleGridLeft="1",
+		scaleGridRight="160",
+		scaleGridTop="0",
+		scaleGridBottom="21");
+	selected-up-skin:Embed("/assets/img/css/tabControlPanel_selected.png",
+		scaleGridLeft="1",
+		scaleGridRight="160",
+		scaleGridTop="1",
+		scaleGridBottom="20");
+	selected-over-skin:Embed("/assets/img/css/tabControlPanel_over.png",
+		scaleGridLeft="1",
+		scaleGridRight="160",
+		scaleGridTop="1",
+		scaleGridBottom="20");
+	over-skin:Embed("/assets/img/css/tabControlPanel_over.png",
+		scaleGridLeft="1",
+		scaleGridRight="160",
+		scaleGridTop="1",
+		scaleGridBottom="20");
+	down-skin:Embed("/assets/img/css/tabControlPanel_down.png",
+		scaleGridLeft="1",
+		scaleGridRight="160",
+		scaleGridTop="1",
+		scaleGridBottom="20");
+	up-skin:Embed("/assets/img/css/tabControlPanel_up.png",
+		scaleGridLeft="1",
+		scaleGridRight="160",
+		scaleGridTop="1",
+		scaleGridBottom="20");
+}
+
+/*.myButtonStyleName {
+	font-weight:normal;
+	text-align:left;
+	corner-radius: 0;
+	background-alpha: 0.7;*/
+/*	skin:Embed("/assets/img/css/tab_over_skin.png",
+			scaleGridLeft="1",
+			scaleGridRight="160",
+			scaleGridTop="0",
+			scaleGridBottom="21");
+	selected-up-skin:Embed("/assets/img/css/tab_selected_skin.png",
+			scaleGridLeft="1",
+			scaleGridRight="160",
+			scaleGridTop="1",
+			scaleGridBottom="20");
+	selected-over-skin:Embed("/assets/img/css/tab_selected_skin.png",
+			scaleGridLeft="1",
+			scaleGridRight="160",
+			scaleGridTop="1",
+			scaleGridBottom="20");
+	over-skin:Embed("/assets/img/css/tab_over_skin.png",
+			scaleGridLeft="1",
+			scaleGridRight="160",
+			scaleGridTop="1",
+			scaleGridBottom="20");*/
+/*}*/
+
+.myButtonStyleName2 {
+	font-weight:bold;
+	text-align:left;
+	horizontal-align:center;
+	vertical-align:middle;
+	font-size:12;
+	background-alpha: 0.7;
+	label-placement:left;
+	skin:Embed("/assets/img/css/tab_over_skin.png",
+			scaleGridLeft="1",
+			scaleGridRight="160",
+			scaleGridTop="0",
+			scaleGridBottom="21");
+	selected-up-skin:Embed("/assets/img/css/tab_selected_skin.png",
+			scaleGridLeft="1",
+			scaleGridRight="160",
+			scaleGridTop="1",
+			scaleGridBottom="20");
+	selected-over-skin:Embed("/assets/img/css/tab_selected_skin.png",
+			scaleGridLeft="1",
+			scaleGridRight="160",
+			scaleGridTop="1",
+			scaleGridBottom="20");
+	over-skin:Embed("/assets/img/css/tab_over_skin.png",
+			scaleGridLeft="1",
+			scaleGridRight="160",
+			scaleGridTop="1",
+			scaleGridBottom="20");
+}
+
+
+.mySelectedTabs {
+	/* font-weight:bold; */
+}
+
+.title
+{
+	/* color:#535353; */
+	color:#666666;
+    font-family: arial; 
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.nestedTab {
+	button-style-name: nestedTabButton;
+	first-button-style-name: nestedTabButton;		
+	last-button-style-name: nestedTabButton;
+}
+
+.nestedTabButton {
+	skin: Embed("/assets/img/css/blank.png");
+	font-weight: normal;
+	text-roll-over-color: #CCCCCC;
+	text-roll-over-color: #CCCCCC;
+}
+
+/* Ratings{
+	horizontalGap:10;
+	paddingTop:0;
+	paddingLeft:6;
+}
+
+RatingItem{
+	borderAlpha:0.5;
+	fillRatios:0,255;
+    fillEnabled:true;
+	fillColors:#E6E6E6,#C7C7C7;
+	fillSelectedColors:#1C7487,#1C7487;
+	fillAlphas:0.9,1;
+}
+ */
+
+/* -------------- VALIDADOS ------------------ */
+
+/*ButtonBar, ToggleButtonBar {
+	use-roll-over: false;
+	theme-color: #dcdcdc;
+	roll-over-color: #dcdcdc;
+   	firstButtonStyleName: firstButton;
+   	buttonStyleName: middleButton;
+   	lastButtonStyleName: lastButton;
+}
+
+.rolloverButton {
+	use-roll-over: false;
+	background-alpha: 0;
+}
+  
+.firstButton {
+	skin: Embed("/assets/img/css/button_bar_first.png",
+			scaleGridLeft="8",
+			scaleGridRight="27",
+			scaleGridTop="8",
+			scaleGridBottom="21");
+	over-skin: Embed("/assets/img/css/button_bar_first_over.png",
+			scaleGridLeft="8",
+			scaleGridRight="27",
+			scaleGridTop="8",
+			scaleGridBottom="21");
+	selected-over-skin: Embed("/assets/img/css/button_bar_first_over.png",
+			scaleGridLeft="8",
+			scaleGridRight="27",
+			scaleGridTop="8",
+			scaleGridBottom="21");
+	down-skin: Embed("/assets/img/css/button_bar_first_over.png",
+			scaleGridLeft="8",
+			scaleGridRight="27",
+			scaleGridTop="8",
+			scaleGridBottom="21");
+	selected-up-skin: Embed("/assets/img/css/button_bar_first_selected.png",
+			scaleGridLeft="8",
+			scaleGridRight="27",
+			scaleGridTop="8",
+			scaleGridBottom="21");
+}
+
+.middleButton {
+	skin: Embed("/assets/img/css/button_bar_middle.png",
+			scaleGridLeft="8",
+			scaleGridRight="27",
+			scaleGridTop="8",
+			scaleGridBottom="21");
+	over-skin: Embed("/assets/img/css/button_bar_middle_over.png",
+			scaleGridLeft="8",
+			scaleGridRight="27",
+			scaleGridTop="8",
+			scaleGridBottom="21");
+	selected-over-skin: Embed("/assets/img/css/button_bar_middle_over.png",
+			scaleGridLeft="8",
+			scaleGridRight="27",
+			scaleGridTop="8",
+			scaleGridBottom="21");
+	down-skin: Embed("/assets/img/css/button_bar_middle_over.png",
+			scaleGridLeft="8",
+			scaleGridRight="27",
+			scaleGridTop="8",
+			scaleGridBottom="21");
+	selected-up-skin: Embed("/assets/img/css/button_bar_middle_selected.png",
+			scaleGridLeft="8",
+			scaleGridRight="27",
+			scaleGridTop="8",
+			scaleGridBottom="21");
+}
+
+.lastButton {
+	skin: Embed("/assets/img/css/button_bar_last.png",
+			scaleGridLeft="8",
+			scaleGridRight="27",
+			scaleGridTop="8",
+			scaleGridBottom="21");
+	over-skin: Embed("/assets/img/css/button_bar_last_over.png",
+			scaleGridLeft="8",
+			scaleGridRight="27",
+			scaleGridTop="8",
+			scaleGridBottom="21");
+	selected-over-skin: Embed("/assets/img/css/button_bar_last_over.png",
+			scaleGridLeft="8",
+			scaleGridRight="27",
+			scaleGridTop="8",
+			scaleGridBottom="21");
+	down-skin: Embed("/assets/img/css/button_bar_last_over.png",
+			scaleGridLeft="8",
+			scaleGridRight="27",
+			scaleGridTop="8",
+			scaleGridBottom="21");
+	selected-up-skin: Embed("/assets/img/css/button_bar_last_selected.png",
+			scaleGridLeft="8",
+			scaleGridRight="27",
+			scaleGridTop="8",
+			scaleGridBottom="21");
+}*/
+
+DataGrid {
+   alternatingItemColors: #FFFFFF, #F3F6FA;
+   headerColors: #FFFFFF, #CCCCCC;
+   horizontalGridLines: false;
+   vertical-grid-lines: false;
+   letterSpacing: 0;
+   horizontalGridLineColor: #cccccc;
+   verticalGridLineColor: #cccccc;
+   useRollOver: true;
+   rollOverColor: #D4D4D4;
+   borderThickness: 0;
+   borderColor: #bdbdbd;
+   selectionColor: #3875D7;
+   text-selected-color: #FFFFFF;
+   textIndent: 0;
+   dropShadowEnabled: false;
+   fontFamily: arial;
+   header-height: 22;
+   headerHeight: 22;
+   rowHeight: 20;
+   row-height: 20;
+   fontSize: 10;
+   fontWeight: normal;
+   vertical-align: top;
+   headerStyleName: "mydataGridHeaderStyle";
+}
+
+TileList {
+	rollOverColor: #D4D4D4;
+	selectionColor: #3875D7;
+}
+
+.mydataGridHeaderStyle {
+/*	text-align:center; */
+   fontFamily: arial;
+   fontWeight: bold;
+   fontSize: 12;
+   fontStyle: normal;
+   textDecoration: none;
+   letterSpacing: 0;
+   vertical-align: top;
+}
+
+LinkButton
+{
+	selectionColor: #7DAF23;
+	rollOverColor: #dcdcdc;
+	themeColor: #dcdcdc;
+}
+
+/*Button {
+	roll-over-color: #dcdcdc;
+	skin: Embed("/assets/img/css/button_skin.png",
+			scaleGridLeft="8",
+			scaleGridRight="23",
+			scaleGridTop="8",
+			scaleGridBottom="21");
+	over-skin: Embed("/assets/img/css/button_over_skin.png",
+			scaleGridLeft="8",
+			scaleGridRight="23",
+			scaleGridTop="8",
+			scaleGridBottom="21");
+	down-skin: Embed("/assets/img/css/button_down_skin.png",
+			scaleGridLeft="8",
+			scaleGridRight="23",
+			scaleGridTop="8",
+			scaleGridBottom="21");
+	open-duration: 0;
+	close-duration: 0;
+	corner-radius: 2;
+}
+
+.redButton {
+	roll-over-color: #dcdcdc;
+	skin: Embed("/assets/img/css/button_skin_red.png",
+			scaleGridLeft="8",
+			scaleGridRight="23",
+			scaleGridTop="8",
+			scaleGridBottom="21");
+	over-skin: Embed("/assets/img/css/button_over_skin_red.png",
+			scaleGridLeft="8",
+			scaleGridRight="23",
+			scaleGridTop="8",
+			scaleGridBottom="21");
+	down-skin: Embed("/assets/img/css/button_down_skin_red.png",
+			scaleGridLeft="8",
+			scaleGridRight="23",
+			scaleGridTop="8",
+			scaleGridBottom="21");
+	open-duration: 0;
+	close-duration: 0;
+	corner-radius: 2;
+}
+
+.mainButton {
+	roll-over-color: #dcdcdc;
+	skin: Embed("/assets/img/css/button_over_skin.png",
+			scaleGridLeft="8",
+			scaleGridRight="23",
+			scaleGridTop="8",
+			scaleGridBottom="21");
+	over-skin: Embed("/assets/img/css/button_over_skin.png",
+			scaleGridLeft="8",
+			scaleGridRight="23",
+			scaleGridTop="8",
+			scaleGridBottom="21");
+	down-skin: Embed("/assets/img/css/button_down_skin.png",
+			scaleGridLeft="8",
+			scaleGridRight="23",
+			scaleGridTop="8",
+			scaleGridBottom="21");
+	open-duration: 0;
+	close-duration: 0;
+	corner-radius: 2;
+}*/
+
+TextInput, AdvancedAutoComplete, AutoComplete {
+	border-skin: Embed("/assets/img/css/textinput_skin.png",
+			scaleGridLeft="4",
+			scaleGridRight="148",
+			scaleGridTop="4",
+			scaleGridBottom="25");
+	roll-over-color: #3875D7;
+	theme-color: #3875D7;
+	padding-left: 2;
+	vertical-align:middle;
+}
+
+MasterTextInput {
+	roll-over-color: #3875D7;
+	theme-color: #3875D7;
+	padding-left: 2;
+	vertical-align:middle;
+}
+
+PromptingTextInput {
+	roll-over-color: #3875D7;
+	theme-color: #3875D7;
+	padding-left: 2;
+	vertical-align:middle;
+}
+
+AdvancedAutoComplete, AutoComplete {
+	border-skin: Embed("/assets/img/css/textinput_skin.png",
+			scaleGridLeft="4",
+			scaleGridRight="148",
+			scaleGridTop="4",
+			scaleGridBottom="25");
+	roll-over-color: #3875D7;
+	theme-color: #3875D7;
+	padding-left: 2;
+	vertical-align:middle;
+}
+
+/*
+//------------------------------
+//  CheckBox
+//------------------------------
+*/
+CheckBox {
+	fontSize: 11;
+	fontWeight: bold;
+	color: #666666;
+    textRollOverColor: #444444;
+    textSelectedColor: #333333;
+    disabledIcon: Embed(source="/assets/img/css/CheckBox_disabledIcon.png");
+    downIcon: Embed(source="/assets/img/css/CheckBox_downIcon.png");
+    overIcon: Embed(source="/assets/img/css/CheckBox_overIcon.png");
+    selectedDisabledIcon: Embed(source="/assets/img/css/CheckBox_selectedDisabledIcon.png");
+    selectedDownIcon: Embed(source="/assets/img/css/CheckBox_selectedDownIcon.png");
+    selectedOverIcon: Embed(source="/assets/img/css/CheckBox_selectedOverIcon.png");
+    selectedUpIcon: Embed(source="/assets/img/css/CheckBox_selectedUpIcon.png");
+    upIcon: Embed(source="/assets/img/css/CheckBox_upIcon.png");
+}
+
+/*CheckBox
+{
+	disabledIcon: Embed(source="/assets/img/css/yflexskin.swf", symbol="CheckBox_disabledIcon");
+	downIcon: Embed(source="/assets/img/css/yflexskin.swf", symbol="CheckBox_downIcon");
+	overIcon: Embed(source="/assets/img/css/yflexskin.swf", symbol="CheckBox_overIcon");
+	selectedDisabledIcon: Embed(source="/assets/img/css/yflexskin.swf", symbol="CheckBox_selectedDisabledIcon");
+	selectedDownIcon: Embed(source="/assets/img/css/yflexskin.swf", symbol="CheckBox_selectedDownIcon");
+	selectedOverIcon: Embed(source="/assets/img/css/yflexskin.swf", symbol="CheckBox_selectedOverIcon");
+	selectedUpIcon: Embed(source="/assets/img/css/yflexskin.swf", symbol="CheckBox_selectedUpIcon");
+	upIcon: Embed(source="/assets/img/css/yflexskin.swf", symbol="CheckBox_upIcon");
+}		*/
+
+ColorPicker
+{
+	disabledSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="ColorPicker_disabledSkin");
+	downSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="ColorPicker_downSkin");
+	overSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="ColorPicker_overSkin");
+	upSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="ColorPicker_upSkin");
+}	
+
+
+
+/*
+//------------------------------
+//  ComboBox
+//------------------------------
+*/
+
+ComboBox {
+	paddingLeft: 5;
+	paddingTop: 0;
+	fontSize: 11;
+	fontWeight: bold;
+	rollOverColor: #3875D7;
+	roll-over-color: #3875D7;
+	color: #666666;
+	disabledSkin: Embed(source="/assets/img/css/ComboBoxArrow_disabledSkin.png",
+		scaleGridLeft="4", scaleGridTop="4", scaleGridRight="64", scaleGridBottom="18"); 
+	downSkin: Embed(source="/assets/img/css/ComboBoxArrow_downSkin.png",
+		scaleGridLeft="4", scaleGridTop="4", scaleGridRight="64", scaleGridBottom="18"); 
+	editableDisabledSkin: Embed(source="/assets/img/css/ComboBoxArrow_editableDisabledSkin.png",
+		scaleGridLeft="4", scaleGridTop="0", scaleGridRight="17", scaleGridBottom="18");
+	editableDownSkin: Embed(source="/assets/img/css/ComboBoxArrow_editableDownSkin.png",
+		scaleGridLeft="4", scaleGridTop="0", scaleGridRight="17", scaleGridBottom="18");
+	editableOverSkin: Embed(source="/assets/img/css/ComboBoxArrow_editableOverSkin.png",
+		scaleGridLeft="4", scaleGridTop="0", scaleGridRight="17", scaleGridBottom="18");
+	editableUpSkin: Embed(source="/assets/img/css/ComboBoxArrow_editableUpSkin.png",
+		scaleGridLeft="4", scaleGridTop="0", scaleGridRight="17", scaleGridBottom="18");
+	overSkin: Embed(source="/assets/img/css/ComboBoxArrow_overSkin.png",
+		scaleGridLeft="4", scaleGridTop="4", scaleGridRight="64", scaleGridBottom="18"); 
+	upSkin: Embed(source="/assets/img/css/ComboBoxArrow_upSkin.png",
+		scaleGridLeft="4", scaleGridTop="4", scaleGridRight="64", scaleGridBottom="18"); 
+}
+
+.maximizeRestoreButton
+{
+	up-skin:        	Embed("/assets/img/css/maximize_up.png");
+	over-skin:      	Embed("/assets/img/css/maximize_over.png");
+	down-skin:      	Embed("/assets/img/css/maximize_up.png");
+	selected-up-skin:   Embed("/assets/img/css/restore_up.png");
+	selected-over-skin: Embed("/assets/img/css/restore_over.png");
+	selected-down-skin: Embed("/assets/img/css/restore_up.png");
+}
+
+.minimizeButton
+{
+	up-skin:        Embed("/assets/img/css/minimize_up.png");
+	over-skin:      Embed("/assets/img/css/minimize_over.png");
+	down-skin:      Embed("/assets/img/css/minimize_up.png");
+}
+
+.refreshButton
+{
+	up-skin:        Embed("/assets/toDelete/media-playlist-repeat.png");
+	over-skin:      Embed("/assets/toDelete/media-playlist-repeat.png");
+	down-skin:      Embed("/assets/toDelete/media-playlist-repeat.png");
+}
+
+.optionButton
+{
+	up-skin:        Embed("/assets/toDelete/gnome-settings.png");
+	over-skin:      Embed("/assets/toDelete/gnome-settings.png");
+	down-skin:      Embed("/assets/toDelete/gnome-settings.png");
+}
+
+.showLogButton
+{
+	up-skin:        Embed("/assets/toDelete/gnome-mime-application-x-gnumeric.png");
+	over-skin:      Embed("/assets/toDelete/gnome-mime-application-x-gnumeric.png");
+	down-skin:      Embed("/assets/toDelete/gnome-mime-application-x-gnumeric.png");
+}
+
+.positionButton
+{
+	up-skin:        Embed("/assets/img/css/ScrollBar_thumbIcon.png");
+	over-skin:      Embed("/assets/img/css/ScrollBar_thumbIcon.png");
+	down-skin:      Embed("/assets/img/css/ScrollBar_thumbIcon.png");
+}
+
+Pod
+{
+	
+/*	padding-top: 31px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	rounded-bottom-corners: false;
+	border-thickness: 1px;
+	border-style: solid;
+	border-color: #999999;
+	header-colors: #000000, #000000;
+	highlight-alphas: .9, 0;
+	background-color: #ffffff;
+	corner-radius: 6px;
+	header-height: 32px;
+	shadow-direction: right;
+	drop-shadow-color: #999999;*/
+
+	
+	padding-top: 2px;
+	padding-left: 0px;
+	padding-right: 0px;
+	controlPaddingRight: 5px;
+	padding-bottom: 0px;
+	rounded-bottom-corners: false;
+	border-thickness: 1px;
+	border-style: solid;
+	border-color: #CCCCCC;
+	color: #3a6099;
+/*	border-color: #999999;*/
+/*	header-colors: #cccccc, #999999;*/
+	header-colors: #538ce0,#3a6099;
+/*	header-colors: #FFFFFF;*/
+	highlight-alphas: 0.5, 0.5;
+	background-color: #ffffff;
+	corner-radius: 6px;
+	header-height: 22px;
+	shadow-direction: right;
+	drop-shadow-color: #999999;
+}
+
+.podTitle
+{
+	font-size: 11px;
+	font-family: arial;
+	font-weight: normal;
+	color: #3a6099;
+	theme-color: #3a6099;
+/*	background-color: #FFFFFF;*/
+/*	background-colors: #cccccc, #999999;*/
+	header-colors: #000000, #000000;
+/*	background-colors: #3875D7, #F3F6FA;*/
+/*	titleBackgroundSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="Panel_titleBackgroundSkin");*/
+}
+
+DragHighlight
+{
+	border-color: #CCCCCC;
+	border-thickness: 3px;
+	border-style: solid;
+	background-color: #F3F3F3;
+}
+
+/* Detail
+{
+	color: #333333;
+	padding-top: 10;
+	padding-left: 60;
+	padding-bottom: 15;
+}
+ */
+ 
+/* ViewControlBar
+{
+	padding-top:	0px;
+	padding-left:	30px;
+	padding-right:	60px;
+	font-weight:	bold;
+	color: 			#666666;
+}
+ */
+ 
+/* GridHeaderItem
+{
+	color: 					#333333;
+	text-roll-over-color: 	#666666;
+	font-weight: 			bold;
+}
+ */
+ 
+.gridHeaderDivider
+{
+	stroke-color: #CDCDCD;
+	shadow-color: #FFFFFF;
+}
+
+/* GridLayoutManager
+{
+	alternating-item-colors: #ffffff, #f3f3f3;
+}
+ */
+ 
+/* TypeHeaderItem
+{
+	color: 						#3F6B82;
+	font-size: 					12px;
+	font-weight: 				bold;
+	padding-top: 				7px;
+	text-roll-over-color: 		#6598B4;
+	background-gradient-colors:	#BFD1DA, #FFFFFF;
+}
+ */
+ 
+/* Thumb
+{
+	roll-over-color:	#D9F0FF;
+	selected-color:		#BBE3FF;
+}
+ */
+ 
+.detailDivider
+{
+	strokeColor: #CCCCCC;
+}
+
+/* Icon
+{
+	color:			#666666;
+	font-weight:	bold;
+}
+ */
+ 
+/*
+------------------------------------------------------------------------
+ACCORDION
+------------------------------------------------------------------------
+*/
+
+/*Accordion
+{
+    border-color:            #cfcfcf;
+    background-color:        #f3f3f3;
+}
+
+
+AccordionHeader
+{
+    header-height:            22;
+    border-style:            solid;
+    font-family:            franklin1;
+    font-weight:            normal;
+    color:                    #333333;
+    text-roll-over-color:    #333333;
+    text-selected-color:    #000000;
+    font-size:                11;    
+    up-skin:                Embed("/assets/img/css/accordion_barra.png", scaleGridTop="3", scaleGridBottom="19", scaleGridLeft="3", scaleGridRight="74");
+    over-skin:                Embed("/assets/img/css/accordion_barra1.png", scaleGridTop="3", scaleGridBottom="19", scaleGridLeft="3", scaleGridRight="74");    
+    down-skin:                Embed("/assets/img/css/accordion_barra2.png", scaleGridTop="3", scaleGridBottom="19", scaleGridLeft="3", scaleGridRight="74");
+    selected-up-skin:        Embed("/assets/img/css/accordion_barra3.png", scaleGridTop="3", scaleGridBottom="19", scaleGridLeft="3", scaleGridRight="74");
+    selected-over-skin:        Embed("/assets/img/css/accordion_barra3.png", scaleGridTop="3", scaleGridBottom="19", scaleGridLeft="3", scaleGridRight="74");
+    selected-down-skin:        Embed("/assets/img/css/accordion_barra3.png", scaleGridTop="3", scaleGridBottom="19", scaleGridLeft="3", scaleGridRight="74");
+}*/
+
+.LabelEditForm
+{
+	font-family: arial;
+	font-size: 14;
+}
+
+Button
+{
+	disabledSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="Button_disabledSkin");
+	downSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="Button_downSkin");
+	overSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="Button_overSkin");
+	upSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="Button_upSkin");
+	font-family: arial;
+	paddingTop: 2;
+}
+
+
+/*
+//------------------------------
+//  primaryButton
+//-----------------------------
+*/
+
+.primaryButton
+
+{
+	color: #ffffff;
+	textRollOverColor: #ffffff;
+	textSelectedColor: #ffffff;
+	font-family: arial;
+	disabledSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="Button_disabledSkin");
+/*	disabledSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="primaryButton_disabledSkin");*/
+	downSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="primaryButton_downSkin");
+	overSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="primaryButton_overSkin");
+	upSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="primaryButton_upSkin");
+	paddingTop: 2;	
+}
+
+ButtonBar 
+{
+	buttonStyleName: "buttonBarButton"; 
+	firstButtonStyleName: "firstButtonBarButton"; 
+	lastButtonStyleName: "lastButtonBarButton";
+}
+
+ToggleButtonBar 
+{ 
+	buttonStyleName: "buttonBarButton"; 
+	firstButtonStyleName: "firstButtonBarButton"; 
+	lastButtonStyleName: "lastButtonBarButton";
+}
+
+.VerticalToggleButtonBar 
+{ 
+	buttonStyleName: "verticalButtonBarButton"; 
+	firstButtonStyleName: "verticalButtonBarButton"; 
+	lastButtonStyleName: "verticalButtonBarButton";
+}
+
+/* 
+//------------------------------ 
+//  ButtonBarButtons 
+//------------------------------ 
+*/ 
+
+.verticalButtonBarButton
+{ 
+	text-align:left;
+	disabledSkin: Embed("/assets/img/css/tab_over_skin.png",
+		scaleGridLeft="1",
+		scaleGridRight="160",
+		scaleGridTop="0",
+		scaleGridBottom="21");
+	downSkin: Embed("/assets/img/css/tab_over_skin.png",
+		scaleGridLeft="1",
+		scaleGridRight="160",
+		scaleGridTop="0",
+		scaleGridBottom="21"); 
+	overSkin: Embed("/assets/img/css/tab_over_skin.png",
+		scaleGridLeft="1",
+		scaleGridRight="160",
+		scaleGridTop="0",
+		scaleGridBottom="21"); 
+/*	selectedDisabledSkin: Embed("/assets/img/css/tab_over_skin.png",
+		scaleGridLeft="1",
+		scaleGridRight="160",
+		scaleGridTop="0",
+		scaleGridBottom="21"); 
+	selectedDownSkin: Embed("/assets/img/css/tab_over_skin.png",
+		scaleGridLeft="1",
+		scaleGridRight="160",
+		scaleGridTop="0",
+		scaleGridBottom="21"); 
+	selectedOverSkin: Embed("/assets/img/css/tab_over_skin.png",
+		scaleGridLeft="1",
+		scaleGridRight="160",
+		scaleGridTop="0",
+		scaleGridBottom="21");
+	selectedUpSkin: Embed("/assets/img/css/tab_over_skin.png",
+		scaleGridLeft="1",
+		scaleGridRight="160",
+		scaleGridTop="0",
+		scaleGridBottom="21");*/
+	selectedDisabledSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="ButtonBar_buttonSelectedDisabledSkin"); 
+	selectedDownSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="ButtonBar_buttonSelectedUpSkin"); 
+	selectedOverSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="ButtonBar_buttonSelectedUpSkin");
+	selectedUpSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="ButtonBar_buttonSelectedUpSkin");
+	upSkin: Embed("/assets/img/css/tab_over_skin.png",
+		scaleGridLeft="1",
+		scaleGridRight="160",
+		scaleGridTop="0",
+		scaleGridBottom="21"); 
+	corner-radius:0;
+}
+
+.firstButtonBarButton
+{ 
+	disabledSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="ButtonBar_firstDisabledSkin"); 
+	downSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="ButtonBar_firstDownSkin"); 
+	overSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="ButtonBar_firstOverSkin"); 
+	selectedDisabledSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="ButtonBar_firstSelectedDisabledSkin"); 
+	selectedDownSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="ButtonBar_firstSelectedUpSkin"); 
+	selectedOverSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="ButtonBar_firstSelectedUpSkin");
+	selectedUpSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="ButtonBar_firstSelectedUpSkin");
+	upSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="ButtonBar_firstUpSkin"); 
+}
+
+.buttonBarButton
+{ 
+	disabledSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="ButtonBar_buttonDisabledSkin"); 
+	downSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="ButtonBar_buttonDownSkin");
+	overSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="ButtonBar_buttonOverSkin"); 
+	selectedDisabledSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="ButtonBar_buttonSelectedDisabledSkin"); 
+	selectedDownSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="ButtonBar_buttonSelectedUpSkin"); 
+	selectedOverSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="ButtonBar_buttonSelectedUpSkin");
+	selectedUpSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="ButtonBar_buttonSelectedUpSkin");
+	upSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="ButtonBar_buttonUpSkin"); 
+}
+
+.lastButtonBarButton
+{ 
+	disabledSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="ButtonBar_lastDisabledSkin"); 
+	downSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="ButtonBar_lastDownSkin"); 
+	overSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="ButtonBar_lastOverSkin"); 
+	selectedDisabledSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="ButtonBar_lastSelectedDisabledSkin"); 
+	selectedDownSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="ButtonBar_lastSelectedUpSkin"); 
+	selectedOverSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="ButtonBar_lastSelectedUpSkin");
+	selectedUpSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="ButtonBar_lastSelectedUpSkin");
+	upSkin: Embed(source="/assets/img/css/yflexskin.swf", symbol="ButtonBar_lastUpSkin"); 
+}
+
+
+DropDownFilterEditor{
+	border-style:           solid;
+	background-alpha:       1;
+	background-color:       white;
+	drop-shadow-enabled: true;
+	padding-bottom:         5;
+	padding-left:           5;
+	padding-right:          5;
+	padding-top:            5;
+}
+
+
+.filterDisabled{
+	padding-bottom:         0;
+	padding-left:           5;
+	padding-right:          0;
+	padding-top:            0;
+	horizontal-gap:         0;
+	vertical-align:         middle;
+}
+
+DropDownFilterHeaderRenderer{
+	padding-bottom:         0;
+	padding-left:           5;
+	padding-right:          0;
+	padding-top:            0;
+	horizontal-gap:         0;
+	vertical-align:         middle;
+	filter-button-style-name: dataGridFilterButton;
+	filter-button-active-style-name: dataGridFilterButtonActive;
+}
+.dataGridFilterButton{
+	padding-bottom:         4;
+	padding-left:           4;
+	padding-right:          4;
+	padding-top:            4;
+	icon:                           Embed("/assets/icons/filter.png");
+}
+
+.dataGridFilterButtonActive{
+	padding-bottom:         4;
+	padding-left:           4;
+	padding-right:          4;
+	padding-top:            4;
+	icon:                           Embed("/assets/icons/filter_active.png");
+}
+
