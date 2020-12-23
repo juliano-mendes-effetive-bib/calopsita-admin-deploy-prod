@@ -128,6 +128,7 @@ function access(goTo) {
                         break;
                 }
             } else {
+                console.log("Chamando login flex 1");
                 callLoginFlex();
                 console.error("Erro ao solicitar acesso ao login LUM", "Erro");
                 console.error("data ", data.MESSAGE);
@@ -142,6 +143,7 @@ function access(goTo) {
             } else {
                 console.error("Ocorreu um erro nesta ação", "Erro");
             }
+            console.log("Chamando login flex 2");
             callLoginFlex();
         }
     });
@@ -189,7 +191,8 @@ function check() {
 									getFlexApp(appName).loginLum(data.LUM_USER.dsEmail);
 								}
 
-							} else { // if has no logged user
+                            } else { // if has no logged user
+                                console.log("Chamando login flex 3");
 								callLoginFlex();
 							}
 
@@ -201,15 +204,18 @@ function check() {
 								console.error("Ocorreu um erro nesta ação", "Erro");
 							} else {
 								console.error("Ocorreu um erro nesta ação", "Erro");
-							}
+                            }
+                            console.log("Chamando login flex 4");
 							callLoginFlex();
 						}
 					});
 				} else {
+                    console.log("Chamando login flex 5");
 					callLoginFlex();
 				};
 			});
     } else {
+        console.log("Chamando login flex 6");
         callLoginFlex();
     }
 
@@ -266,30 +272,36 @@ function loginLum() {
                             setSWFIsReady("", "")
                         } else if (data.STATUS == "INVALID_LOGIN" || data.STATUS == "INVALID_PARAMS") {
                             console.warn("Login Inválido")
+                            console.log("Chamando login flex 7");
                             callLoginFlex();
                         } else if (data.STATUS == "INVALID_TOKEN") {
                             if (tries < 1) {
                                 access('LOGIN')
                                 tries++
                             } else {
+                                console.log("Chamando login flex 8");
                                 callLoginFlex();
                             }
                             console.error("Token de verificação inválido")
                         } else if (data.STATUS == "ERROR") {
+                            console.log("Chamando login flex 9");
                             callLoginFlex();
                             console.error("Ocorreu um erro nesta ação")
                         } else {
+                            console.log("Chamando login flex 10");
                             callLoginFlex();
                             console.warn("Sessão expirada")
                             access('LOGIN')
                         }
                     } else {
+                        console.log("Chamando login flex 11");
                         callLoginFlex();
                     }
 
                 },
                 error: function (jqXHR, textStatus, errorThrown) {
                     console.error(jqXHR);
+                    console.log("Chamando login flex 12");
                     callLoginFlex()
                 }
             });
